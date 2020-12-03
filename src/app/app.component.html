@@ -1,0 +1,13 @@
+<h1> Fortune Cookie</h1>
+<form [formGroup]="fortuneForm" (ngSubmit)="onSubmit()">
+  <button type="submit">Feelin Lucky!</button>
+  <select formControlName="select">
+    <option [selected]="true" value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+</form>
+<div *ngFor="let i of array">
+  {{i.cookie}}
+</div>
